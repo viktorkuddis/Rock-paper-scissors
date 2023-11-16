@@ -71,7 +71,7 @@ let computerMove;
 //spelarens selected move deklareras längre upp
 
 let playerScore = 0;
-let computerScore = 5;
+let computerScore = 0;
 
 
 
