@@ -116,7 +116,7 @@ playBtn.addEventListener("click", function () {
                 roundWinner_P = `Du spelade ${selectedMove} mot datorns ${computerMove}.`
                 break;
             case 'computer':
-                roundWinner_Headding = "Datorn tod dig!";
+                roundWinner_Headding = "Datorn tog dig!";
                 roundWinner_P = `Datorns ${computerMove} var starkare än din ${selectedMove}.`
                 break;
 
