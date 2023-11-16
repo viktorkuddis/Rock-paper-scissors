@@ -1,0 +1,204 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --mainColor1: #F49640;
+    --mainColor2: #FED51B;
+}
+
+body {
+    min-height: 100vh;
+    background-image: linear-gradient(var(--mainColor2), var(--mainColor1));
+    background-size: cover;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    text-align: center;
+
+    padding: 1rem;
+
+    position: relative;
+}
+
+header {
+    padding-bottom: 0.5rem;
+}
+
+header,
+main {
+    max-width: 600px;
+    margin: auto;
+}
+
+/* ---------------------------------- */
+/*          scream countdown wall */
+
+.coutn-down_div {
+    background-color: #000000e6;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hidden {
+    display: none;
+}
+
+#count-down-plate {
+    background-color: #64BAAA;
+    border-radius: 1rem;
+    height: 90%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#coutn-down_scream {
+    font-size: xx-large;
+    color: white;
+}
+
+/*        scream countdown wall */
+/* ---------------------------------- */
+
+
+
+
+#arena_grid {
+    display: grid;
+    grid-template-columns: 1fr 0.5rem 1fr;
+    grid-template-areas:
+        "playerArea ... computerArea";
+}
+
+
+
+/* varje planhalva */
+#arena_grid>div {
+    background-color: #ffffff33;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 0.5rem;
+}
+
+#player-container {
+    grid-area: playerArea;
+}
+
+#computer-container {
+    grid-area: computerArea;
+}
+
+
+#instructions {
+    padding-top: 1rem;
+}
+
+#move-panel-btns {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1rem;
+
+}
+
+.move_btn {
+    min-height: 6rem;
+    width: 6rem;
+
+    border-radius: 0.5rem;
+    border: 2px solid #ffffff33;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.move_btn:hover {
+    background-color: #ffffff33;
+}
+
+input:checked+label {
+    background-color: #ffffff44
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.move_btn img {
+    max-width: 60%;
+    max-height: 60%;
+}
+
+button {
+    border-style: none;
+    font-size: inherit;
+    font-family: inherit;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    color: white;
+    border: 2px solid #ffffff44;
+
+    background-color: #64BAAA;
+    margin: 1rem;
+}
+
+button:hover {
+    border: 2px solid #ffffff88;
+}
+
+
+#playerHand_container,
+#computerHand_container {
+    height: 15vh;
+    max-height: 12rem;
+}
+
+#playerHand_container img,
+#computerHand_container img {
+    height: 100%;
+}
+
+.scoreContainers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#playerScoreContainer,
+#computerScoreContainer {
+    background-color: rgba(245, 245, 245, 0.642);
+    height: 2rem;
+    width: 2rem;
+    padding: 0.4rem;
+    border-radius: 5rem;
+}
+
+.playeriswinner {
+    background-color: lightgreen;
+    border: 2px solid #ffffff;
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+
+.computeriswinner {
+    background-color: lightcoral;
+    border: 2px solid #ffffff;
+    border-radius: 0.5rem;
+    padding: 1rem;
+}

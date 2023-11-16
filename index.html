@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+
+<body>
+
+    <div class="coutn-down_div hidden" id="coutn-down_div">
+        <div id="count-down-plate">
+            <h2 id="coutn-down_scream"></h2>
+        </div>
+
+
+    </div>
+
+    <header>
+        <h1>STEN SAX PÅSE</h1>
+    </header>
+
+    <main>
+
+        <section id="arena_grid">
+
+            <div id="player-container">
+                <h3>Du</h3>
+
+                <div id="playerHand_container">
+                </div>
+
+                <div class="scoreContainers">
+                    <div> Poäng: </div>
+                    <div id="playerScoreContainer"></div>
+                </div>
+
+            </div>
+
+
+            <div id="computer-container">
+                <h3>Mr Computer</h3>
+
+                <div id="computerHand_container">
+                </div>
+
+
+                <div class="scoreContainers">
+                    <div> Poäng:</div>
+                    <div id="computerScoreContainer"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="instructions">
+
+        </section>
+
+        <section id="moves-panel">
+            <div id="move-panel-btns">
+
+
+                <input type="radio" id="stone_radio" name="move" value="stone">
+
+                <label for="stone_radio" class="move_btn" id="stone_btn">
+                    <img src="images/rock-left.png" alt="Sten">STEN
+                </label>
+
+                <input type="radio" id="scissor_radio" name="move" value="scissor">
+
+                <label for="scissor_radio" class="move_btn" id="scissor_btn"><img src="images/scissor-left.png"
+                        alt="Sax">SAX
+                </label>
+
+                <input type="radio" id="bag_radio" name="move" value="bag">
+
+                <label for="bag_radio" class="move_btn" id="bag_btn"><img src="images/bag-left.png" alt="Påse">PÅSE
+                </label>
+
+
+            </div>
+        </section>
+
+        <button id="play_btn">SPELA</button>
+
+
+
+
+
+
+    </main>
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
